@@ -1,4 +1,3 @@
-Certainly! Here is the updated `README.md` with the issue mentioned regarding the contact form:
 
 ---
 
@@ -164,4 +163,4 @@ Please follow PEP8 guidelines for Python code and ensure the HTML is clean and f
 
 ---
 
-### This updated `README.md` now includes the known issue with the contact form, and everything else is set up for easy deployment and testing!
+
