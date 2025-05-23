@@ -280,7 +280,7 @@ def about():
 
 MAIL_ADDRESS = os.environ.get("EMAIL_KEY")
 MAIL_APP_PW = os.environ.get("PASSWORD_KEY")
-MAIL_ADDRESS1=os.environ.get("EMAIL_KEY1")
+MAIL_ADDRESS1=os.environ.get("EMAIL_KEY")
 
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
@@ -296,7 +296,7 @@ def send_email(name, email, phone, message):
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
         connection.login(MAIL_ADDRESS, MAIL_APP_PW)
-        connection.sendmail(MAIL_ADDRESS, MAIL_ADDRESS, email_message)
+        connection.sendmail(MAIL_ADDRESS, MAIL_ADDRESS1, email_message)
 
 
 if __name__ == "__main__":
